@@ -300,16 +300,55 @@
               </svg></button></li>
         </ul>
       </div>
+      <div>
+        <form>
+          <label for="mail">Підпишіться на розсилку</label>
+          <input type="email" name="mail" id="mail" placeholder="E-mail">
+          <button type="submit">Підписатися</button>
+
+        </form>
+      </div>
 
     </div>
   </footer>
   <div data-modal class="backdrop is-hidden">
     <div class="modal">
-      <p></p>
+      <form class="form">
+        <h2 class="title-modal">Залиште свої дані, ми вам передзвонимо</h2>
+        <div class="form-field">
+          <label class="form-label" for="name">Ім'я</label>
+          <input class="form-input" type="text" name="name" id="name">
+          <svg class="icon-input"><use href="./img/icons.svg#icon-vector"></use></svg>          
+        </div>
+
+        <div class="form-field">
+          <label class="form-label" for="tel">Телефон</label>
+          <input class="form-input" type="tel" name="tel" id="tel">
+          <svg class="icon-input"><use href="./img/icons.svg#icon-phone-black"></use></svg>     
+        </div>
+
+        <div class="form-field">
+          <label class="form-label" for="email">Пошта</label>
+          <input class="form-input" type="email" name="email" id="email">
+          <svg class="icon-input"><use href="./img/icons.svg#icon-email-black"></use></svg>     
+        </div>
+
+        <div class="form-field">
+          <label class="form-label" for="comment">Коментар</label>
+          <textarea name="comment" id="comment" placeholder="Введіть текст"></textarea>
+        </div>
+
+        <div class="form-field agreement">
+          <input class="form-input-agree" type="checkbox" value="" name="user-agreement" id="user-agreement">
+          <label class="form-label" for="user-agreement">Погоджуюся з розсилкою та приймаю <a href="#"><span class="link-agreement">Умови договору</span></a></label>
+        </div>
+        <button type="submit">Відправити</button>
+      </form>
+
       <button data-modal-close class="closeModal btn-closeModal"><svg>
           <use href="./img/icons.svg#icon-close-black"></use>
         </svg></button>
-    </div>
+    </div>>
   </div>
   <script src="./js/modal.js"></script>
 </body>

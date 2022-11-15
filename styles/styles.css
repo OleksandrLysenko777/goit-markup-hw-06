@@ -306,6 +306,7 @@ a {
 .link-item {
     color: #2196f3;
 }
+
 .link-item:after {
     position: relative;
     content: '';
@@ -804,6 +805,7 @@ a {
 .app {
     position: relative;
 }
+
 /*portfolio*/
 .portfolio-item {
     position: relative;
@@ -889,6 +891,70 @@ a {
 
 .closeModal:hover {
     background-color: #ffffff;
-    border: 1px solid #ff0000;
-    fill: #ff0000;
+    border: 1px solid #2196f3;
+    fill: #2196f3;
+}
+
+/*оформление модального окна*/
+
+textarea:hover,
+input:hover {
+    color: #2196f3;
+    border-color: #2196f3;
+}
+
+.form {
+    width: 448px;
+    margin: 40px;
+    outline: 1px solid #2196f3;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-modal {
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.form-field input,
+textarea {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+.form-field label {
+    margin-bottom: 4px;
+}
+.agreement {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+.link-agreement {
+    color: #2196f3;
+    text-decoration: underline;
+}
+.icon-input {
+    position: absolute;
+    max-width: 18px;
+    max-height: 18px;
+    transition-property: transform;
+    transform: translateY(150%);
+}
+.form-input {
+    position: relative;
+    width: 448px;
+    height: 40px;
 }

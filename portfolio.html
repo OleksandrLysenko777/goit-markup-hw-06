@@ -242,10 +242,14 @@
         </ul>
       </div>
       <div>
-        <form>
-          <label for="mail">Підпишіться на розсилку</label>
-          <input type="email" name="mail" id="mail" placeholder="E-mail">
-          <button type="submit">Підписатися</button>
+        <form class="form-footer">
+          <label class="title-subscribe" for="mail">Підпишіться на розсилку</label>
+          <div class="feedback">
+            <input class="input-mail" type="email" name="mail" id="mail" placeholder="E-mail">
+            <button class="btn-subscribe" type="submit">Підписатися
+              <svg class="icon-send" width="24" hidden="24"><use href="./img/icons.svg#icon-icon-send"></use></svg>
+            </button>
+          </div>
 
         </form>
       </div>

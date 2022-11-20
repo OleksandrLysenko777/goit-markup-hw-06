@@ -531,9 +531,12 @@ a {
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #cccccc;
-    background-image: linear-gradient(to right, #cccccc);
-    background-image: url(../img/overlay.jpg);
+    background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4) 0%,
+            rgba(47, 48, 58, 0.4) 100%
+        ),
+        url(../img/overlay.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -956,6 +959,15 @@ textarea:active,
     margin-right: 20px;
     color: #ffffff;
 }
+.input-mail:hover,
+.input-mail:focus {
+    color: #ffffff;
+    border-color: #2196f3;
+    transition-property: #2196f3;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
 
 textarea {
     resize: none;
@@ -994,7 +1006,12 @@ textarea {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+input:focus {
+    color: #2196f3;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .agree {
     width: 16px;
     height: 15px;

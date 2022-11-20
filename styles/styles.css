@@ -904,7 +904,8 @@ a {
 /*modal*/
 
 textarea:hover,
-.form-input:hover {
+.form-input:hover,
+.form-input:focus {
     color: #2196f3;
     border-color: #2196f3;
     transition-property: border-color;

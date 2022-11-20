@@ -305,11 +305,7 @@
           <label class="title-subscribe" for="mail">Підпишіться на розсилку</label>
           <div class="feedback">
             <input class="input-mail" type="email" name="mail" id="mail" placeholder="E-mail">
-            <button class="btn-subscribe" type="submit">Підписатися
-              <svg class="icon-send" width="100%" height="100%">
-                <use href="./img/icons.svg#icon-icon-send"></use>
-              </svg>
-            </button>
+            <button class="btn-subscribe" type="submit">Підписатися</button>
           </div>
 
         </form>
@@ -324,7 +320,7 @@
         <div class="form-field">
           <label class="form-label" for="name">Ім'я</label>
           <div class="input-wrapper">
-            <svg class="icon-input" width="18" height="18">
+            <svg class="icon-input icon-size" width="18" height="18">
               <use href="./img/icons.svg#icon-vector"></use>
             </svg>
             <input class="form-input" type="text" name="name" id="name">
@@ -352,10 +348,10 @@
           <label class="form-label" for="comment">Коментар</label>
           <textarea name="comment" id="comment" placeholder="Введіть текст"></textarea>
         </div>
-        <div class="agreement">
-          <label class="form-agree" for="user-agreement">
-            <input class="agree" type="checkbox" value="" name="user-agreement" id="user-agreement">Погоджуюся з
-            розсилкою та приймаю <a href="#"><span class="link link-agreement"> Умови договору</span></a>
+        <div class="input-line check-line">
+           <input class="agree visually-hidden" type="checkbox" value="agree" name="checkbox-agree" id="checkbox-agree">
+           <label class="checkbox-agree" for="checkbox-agree">Погоджуюся з розсилкою та приймаю 
+            <a href="#"><span class="link link-agreement"> Умови договору</span></a>
           </label>
         </div>
         <button class="button btn-send" type="submit">Відправити</button>
